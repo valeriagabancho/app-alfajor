@@ -26,7 +26,7 @@ public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
 	private JLabel lblRivasCrucesJos;
 
 	/**
-	 * Launch the application.
+	 * Launch the application
 	 */
 	public static void main(String[] args) {
 		try {
