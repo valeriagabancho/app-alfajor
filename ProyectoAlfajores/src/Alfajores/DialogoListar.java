@@ -103,35 +103,35 @@ public class DialogoListar extends JDialog implements ActionListener {
 	protected void actionPerformedBtnListar(ActionEvent e) {
 		
 		txtS.setText("Listado de Alfajores"+"\n\n");
-		txtS.append("Marca     : "+MenúPrincipal.marca0+"\n");
-		txtS.append("Precio    : S/ "+MenúPrincipal.precio0+"\n");
-		txtS.append("Contenido : "+MenúPrincipal.contenido0+" ud"+"\n");
-		txtS.append("Peso      : "+MenúPrincipal.peso0+"\n");
-		txtS.append("Sabor     : "+MenúPrincipal.sabor0+"\n\n");
+		txtS.append("Marca     : "+MenuPrincipal.marca0+"\n");
+		txtS.append("Precio    : S/ "+MenuPrincipal.precio0+"\n");
+		txtS.append("Contenido : "+MenuPrincipal.contenido0+" ud"+"\n");
+		txtS.append("Peso      : "+MenuPrincipal.peso0+"\n");
+		txtS.append("Sabor     : "+MenuPrincipal.sabor0+"\n\n");
 		
-		txtS.append("Marca     : "+MenúPrincipal.marca1+"\n");
-		txtS.append("Precio    : S/ "+MenúPrincipal.precio1+"\n");
-		txtS.append("Contenido : "+MenúPrincipal.contenido1+" ud"+"\n");
-		txtS.append("Peso      : "+MenúPrincipal.peso1+"\n");
-		txtS.append("Sabor     : "+MenúPrincipal.sabor1+"\n\n");
+		txtS.append("Marca     : "+MenuPrincipal.marca1+"\n");
+		txtS.append("Precio    : S/ "+MenuPrincipal.precio1+"\n");
+		txtS.append("Contenido : "+MenuPrincipal.contenido1+" ud"+"\n");
+		txtS.append("Peso      : "+MenuPrincipal.peso1+"\n");
+		txtS.append("Sabor     : "+MenuPrincipal.sabor1+"\n\n");
 		
-		txtS.append("Marca     : "+MenúPrincipal.marca2+"\n");
-		txtS.append("Precio    : S/ "+MenúPrincipal.precio2+"\n");
-		txtS.append("Contenido : "+MenúPrincipal.contenido2+" ud"+"\n");
-		txtS.append("Peso      : "+MenúPrincipal.peso2+"\n");
-		txtS.append("Sabor     : "+MenúPrincipal.sabor2+"\n\n");
+		txtS.append("Marca     : "+MenuPrincipal.marca2+"\n");
+		txtS.append("Precio    : S/ "+MenuPrincipal.precio2+"\n");
+		txtS.append("Contenido : "+MenuPrincipal.contenido2+" ud"+"\n");
+		txtS.append("Peso      : "+MenuPrincipal.peso2+"\n");
+		txtS.append("Sabor     : "+MenuPrincipal.sabor2+"\n\n");
 		
-		txtS.append("Marca     : "+MenúPrincipal.marca3+"\n");
-		txtS.append("Precio    : S/ "+MenúPrincipal.precio3+"\n");
-		txtS.append("Contenido : "+MenúPrincipal.contenido3+" ud"+"\n");
-		txtS.append("Peso      : "+MenúPrincipal.peso3+"\n");
-		txtS.append("Sabor     : "+MenúPrincipal.sabor3+"\n\n");
+		txtS.append("Marca     : "+MenuPrincipal.marca3+"\n");
+		txtS.append("Precio    : S/ "+MenuPrincipal.precio3+"\n");
+		txtS.append("Contenido : "+MenuPrincipal.contenido3+" ud"+"\n");
+		txtS.append("Peso      : "+MenuPrincipal.peso3+"\n");
+		txtS.append("Sabor     : "+MenuPrincipal.sabor3+"\n\n");
 		
-		txtS.append("Marca     : "+MenúPrincipal.marca4+"\n");
-		txtS.append("Precio    : S/ "+MenúPrincipal.precio4+"\n");
-		txtS.append("Contenido : "+MenúPrincipal.contenido4+" ud"+"\n");
-		txtS.append("Peso      : "+MenúPrincipal.peso4+"\n");
-		txtS.append("Sabor     : "+MenúPrincipal.sabor4+"\n\n");
+		txtS.append("Marca     : "+MenuPrincipal.marca4+"\n");
+		txtS.append("Precio    : S/ "+MenuPrincipal.precio4+"\n");
+		txtS.append("Contenido : "+MenuPrincipal.contenido4+" ud"+"\n");
+		txtS.append("Peso      : "+MenuPrincipal.peso4+"\n");
+		txtS.append("Sabor     : "+MenuPrincipal.sabor4+"\n\n");
 	}
 	
 }

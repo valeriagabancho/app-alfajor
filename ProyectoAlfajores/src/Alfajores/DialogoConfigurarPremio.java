@@ -84,8 +84,8 @@ public class DialogoConfigurarPremio extends JDialog implements ActionListener, 
 		getContentPane().add(btnCancelar);
 		
 		// datos
-		txtNumero.setText(""+MenúPrincipal.numeroClienteSorpresa);
-		txtPremio.setText(""+MenúPrincipal.premioSorpresa);
+		txtNumero.setText(""+MenuPrincipal.numeroClienteSorpresa);
+		txtPremio.setText(""+MenuPrincipal.premioSorpresa);
 	}
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnAceptar) {
@@ -99,8 +99,8 @@ public class DialogoConfigurarPremio extends JDialog implements ActionListener, 
 		dispose();
 	}
 	protected void btnAceptarActionPerformed(ActionEvent e) {
-		MenúPrincipal.numeroClienteSorpresa=Integer.parseInt(txtNumero.getText());
-		MenúPrincipal.premioSorpresa=txtPremio.getText();
+		MenuPrincipal.numeroClienteSorpresa=Integer.parseInt(txtNumero.getText());
+		MenuPrincipal.premioSorpresa=txtPremio.getText();
 		JOptionPane.showMessageDialog(this, "Datos grabados correctamente");
 		dispose();
 	}

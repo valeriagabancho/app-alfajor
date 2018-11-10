@@ -20,7 +20,7 @@ public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
 	private JLabel lblTienda;
 	private JButton btnCerrar;
 	private JLabel lblAutor;
-	private JLabel lblAño;
+	private JLabel lblAnio;
 	private JLabel lblChvezMorenoJorge;
 	private JLabel lblEspinoFajardoBetzi;
 	private JLabel lblRivasCrucesJos;
@@ -74,11 +74,11 @@ public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
 		lblAutor.setBounds(130, 75, 175, 15);
 		contentPanel.add(lblAutor);
 
-		lblAño = new JLabel("Autores");
-		lblAño.setForeground(Color.BLACK);
-		lblAño.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblAño.setBounds(175, 49, 59, 15);
-		contentPanel.add(lblAño);
+		lblAnio = new JLabel("Autores");
+		lblAnio.setForeground(Color.BLACK);
+		lblAnio.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblAnio.setBounds(175, 49, 59, 15);
+		contentPanel.add(lblAnio);
 		
 		lblChvezMorenoJorge = new JLabel("Ch\u00E1vez Moreno Jorge Luis");
 		lblChvezMorenoJorge.setFont(new Font("Tahoma", Font.PLAIN, 12));

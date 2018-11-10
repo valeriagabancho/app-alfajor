@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 
-public class MenúPrincipal extends JFrame implements ActionListener {
+public class MenuPrincipal extends JFrame implements ActionListener {
 
 	/**
 	 * 
@@ -30,36 +30,36 @@ public class MenúPrincipal extends JFrame implements ActionListener {
 	private JMenuItem mntmGenerarReportes;
 	private JMenuItem mntmConfigurarCantidadptima;
 	
-	// Datos mínimos del primer alfajor
+	// Datos mï¿½nimos del primer alfajor
 	public static String marca0 = "Alfano";
 	public static double precio0 = 18.0;
 	public static int contenido0 = 12;
 	public static double peso0 = 612;
 	public static String sabor0 = "Chocolate";
-	// Datos mínimos del segundo alfajor
+	// Datos mï¿½nimos del segundo alfajor
 	public static String marca1 = "Delicia";
 	public static double precio1 = 30.0;
 	public static int contenido1 = 24;
 	public static double peso1 = 1320;
 	public static String sabor1 = "Nuez";
-	// Datos mínimos del tercer alfajor
+	// Datos mï¿½nimos del tercer alfajor
 	public static String marca2 = "Vimar";
 	public static double precio2 = 16.8;
 	public static int contenido2 = 12;
 	public static double peso2 = 720;
 	public static String sabor2 = "Fresa";
-	// Datos mínimos del cuarto alfajor
+	// Datos mï¿½nimos del cuarto alfajor
 	public static String marca3 = "Turok";
 	public static double precio3 = 32.4;
 	public static int contenido3 = 24;
 	public static double peso3 = 1250;
 	public static String sabor3 = "Mango";
-	// Datos mínimos del quinto alfajor
+	// Datos mï¿½nimos del quinto alfajor
 	public static String marca4 = "Havanna";
 	public static double precio4 = 19.2;
 	public static int contenido4 = 12;
 	public static double peso4 = 780;
-	public static String sabor4 = "Piña";
+	public static String sabor4 = "Piï¿½a";
 	//Conteo de ventas
 	public static int venta0 = 0;
 	public static int venta1 = 0;
@@ -84,15 +84,15 @@ public class MenúPrincipal extends JFrame implements ActionListener {
 	public static double porcentaje4 = 8.5;
 	private JMenuItem mntmConfigurarDescuentos;
 	
-	// Cantidad óptima de cajas vendidas
+	// Cantidad ï¿½ptima de cajas vendidas
 	public static int cantidadOptima = 40;
 	
-	// Cantidad mínima de cajas adquiridas para acceder al obsequio
+	// Cantidad mï¿½nima de cajas adquiridas para acceder al obsequio
 	public static int cantidadObsequiable = 18;
-	// Obsequio por cantidad mínima de cajas adquiridas
+	// Obsequio por cantidad mï¿½nima de cajas adquiridas
 	public static String obsequio = "Billetera";
 	
-	// Número de cliente que recibe el premio sorpresa
+	// Nï¿½mero de cliente que recibe el premio sorpresa
 	public static int numeroClienteSorpresa = 5;
 	// Premio sorpresa
 	public static String premioSorpresa = "Un polo";
@@ -106,7 +106,7 @@ public class MenúPrincipal extends JFrame implements ActionListener {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MenúPrincipal frame = new MenúPrincipal();
+					MenuPrincipal frame = new MenuPrincipal();
 					frame.setVisible(true);
 					frame.setLocationRelativeTo(null);
 				} catch (Exception e) {
@@ -119,7 +119,7 @@ public class MenúPrincipal extends JFrame implements ActionListener {
 	/**
 	 * Create the frame.
 	 */
-	public MenúPrincipal() {
+	public MenuPrincipal() {
 		setTitle("Tienda Alfajores");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);

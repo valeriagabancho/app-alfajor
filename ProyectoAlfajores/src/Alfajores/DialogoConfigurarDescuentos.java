@@ -131,10 +131,10 @@ public class DialogoConfigurarDescuentos extends JDialog implements ActionListen
 		getContentPane().add(btnCancelar);
 		
 		//datos
-				txtA.setText(""+MenúPrincipal.porcentaje1);
-				txtB.setText(""+MenúPrincipal.porcentaje2);
-				txtC.setText(""+MenúPrincipal.porcentaje3);
-				txtD.setText(""+MenúPrincipal.porcentaje4);
+				txtA.setText(""+MenuPrincipal.porcentaje1);
+				txtB.setText(""+MenuPrincipal.porcentaje2);
+				txtC.setText(""+MenuPrincipal.porcentaje3);
+				txtD.setText(""+MenuPrincipal.porcentaje4);
 
 	}
 	public void actionPerformed(ActionEvent arg0) {
@@ -149,10 +149,10 @@ public class DialogoConfigurarDescuentos extends JDialog implements ActionListen
 		dispose();
 	}
 	protected void btnAceptarActionPerformed(ActionEvent arg0) {
-			MenúPrincipal.porcentaje1=Double.parseDouble(txtA.getText());
-			MenúPrincipal.porcentaje2=Double.parseDouble(txtB.getText());
-			MenúPrincipal.porcentaje3=Double.parseDouble(txtC.getText());
-			MenúPrincipal.porcentaje4=Double.parseDouble(txtD.getText());
+			MenuPrincipal.porcentaje1=Double.parseDouble(txtA.getText());
+			MenuPrincipal.porcentaje2=Double.parseDouble(txtB.getText());
+			MenuPrincipal.porcentaje3=Double.parseDouble(txtC.getText());
+			MenuPrincipal.porcentaje4=Double.parseDouble(txtD.getText());
 		JOptionPane.showMessageDialog(this, "Datos grabados correctamente");
 		dispose();
 	}

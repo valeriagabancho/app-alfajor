@@ -123,10 +123,10 @@ public class DialogoConsultar extends JDialog implements ActionListener {
 		getContentPane().add(btnCerrar);
 		
 		//inserta los datos del primer alfajor
-				txtPrecio.setText(""+MenúPrincipal.precio0);
-				txtContenido.setText(""+MenúPrincipal.contenido0);
-				txtPeso.setText(""+MenúPrincipal.peso0);
-				txtSabor.setText(MenúPrincipal.sabor0);
+				txtPrecio.setText(""+MenuPrincipal.precio0);
+				txtContenido.setText(""+MenuPrincipal.contenido0);
+				txtPeso.setText(""+MenuPrincipal.peso0);
+				txtSabor.setText(MenuPrincipal.sabor0);
 
 	}
 	public void actionPerformed(ActionEvent e) {
@@ -143,34 +143,34 @@ public class DialogoConsultar extends JDialog implements ActionListener {
 	protected void cboMarcaActionPerformed(ActionEvent e) {
 		int op=cboMarca.getSelectedIndex();
 		if(op==0){
-			txtPrecio.setText(""+MenúPrincipal.precio0);
-			txtContenido.setText(""+MenúPrincipal.contenido0);
-			txtPeso.setText(""+MenúPrincipal.peso0);
-			txtSabor.setText(MenúPrincipal.sabor0);
+			txtPrecio.setText(""+MenuPrincipal.precio0);
+			txtContenido.setText(""+MenuPrincipal.contenido0);
+			txtPeso.setText(""+MenuPrincipal.peso0);
+			txtSabor.setText(MenuPrincipal.sabor0);
 		}
 		else if(op==1){
-			txtPrecio.setText(""+MenúPrincipal.precio1);
-			txtContenido.setText(""+MenúPrincipal.contenido1);
-			txtPeso.setText(""+MenúPrincipal.peso1);
-			txtSabor.setText(MenúPrincipal.sabor1);
+			txtPrecio.setText(""+MenuPrincipal.precio1);
+			txtContenido.setText(""+MenuPrincipal.contenido1);
+			txtPeso.setText(""+MenuPrincipal.peso1);
+			txtSabor.setText(MenuPrincipal.sabor1);
 		}
 		else if(op==2){
-			txtPrecio.setText(""+MenúPrincipal.precio2);
-			txtContenido.setText(""+MenúPrincipal.contenido2);
-			txtPeso.setText(""+MenúPrincipal.peso2);
-			txtSabor.setText(MenúPrincipal.sabor2);
+			txtPrecio.setText(""+MenuPrincipal.precio2);
+			txtContenido.setText(""+MenuPrincipal.contenido2);
+			txtPeso.setText(""+MenuPrincipal.peso2);
+			txtSabor.setText(MenuPrincipal.sabor2);
 		}
 		else if(op==3){
-			txtPrecio.setText(""+MenúPrincipal.precio3);
-			txtContenido.setText(""+MenúPrincipal.contenido3);
-			txtPeso.setText(""+MenúPrincipal.peso3);
-			txtSabor.setText(MenúPrincipal.sabor3);
+			txtPrecio.setText(""+MenuPrincipal.precio3);
+			txtContenido.setText(""+MenuPrincipal.contenido3);
+			txtPeso.setText(""+MenuPrincipal.peso3);
+			txtSabor.setText(MenuPrincipal.sabor3);
 		}
 		else {
-			txtPrecio.setText(""+MenúPrincipal.precio4);
-			txtContenido.setText(""+MenúPrincipal.contenido4);
-			txtPeso.setText(""+MenúPrincipal.peso4);
-			txtSabor.setText(MenúPrincipal.sabor4);
+			txtPrecio.setText(""+MenuPrincipal.precio4);
+			txtContenido.setText(""+MenuPrincipal.contenido4);
+			txtPeso.setText(""+MenuPrincipal.peso4);
+			txtSabor.setText(MenuPrincipal.sabor4);
 		}
 	}
 }

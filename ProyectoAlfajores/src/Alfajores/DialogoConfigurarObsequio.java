@@ -88,8 +88,8 @@ public class DialogoConfigurarObsequio extends JDialog implements ActionListener
 		contentPanel.add(btnCancelar);
 		
 		//datos
-		txtCantidad.setText(""+MenúPrincipal.cantidadObsequiable);
-		txtObsequio.setText(""+MenúPrincipal.obsequio);
+		txtCantidad.setText(""+MenuPrincipal.cantidadObsequiable);
+		txtObsequio.setText(""+MenuPrincipal.obsequio);
 	}
 	public void actionPerformed(ActionEvent arg0) {
 		if (arg0.getSource() == btnAceptar) {
@@ -103,8 +103,8 @@ public class DialogoConfigurarObsequio extends JDialog implements ActionListener
 		dispose();
 	}
 	protected void btnAceptarActionPerformed(ActionEvent arg0) {
-		MenúPrincipal.cantidadObsequiable=Integer.parseInt(txtCantidad.getText());
-		MenúPrincipal.obsequio=txtObsequio.getText();
+		MenuPrincipal.cantidadObsequiable=Integer.parseInt(txtCantidad.getText());
+		MenuPrincipal.obsequio=txtObsequio.getText();
 	JOptionPane.showMessageDialog(this, "Datos grabados correctamente");
 	dispose();
 	}
@@ -126,8 +126,8 @@ public class DialogoConfigurarObsequio extends JDialog implements ActionListener
 	}
 	protected void txtObsequioKeyTyped(KeyEvent e) {
 		char c = e.getKeyChar();
-		if ((c<'a'||c>'z')&& (c<'A'||c>'Z')&& c!='á'&&c!='é'&&c!='í'&&c!='ó'&&c!='ú'
-				&&c!='Á'&&c!='É'&&c!='Í'&&c!='Ó'&&c!='Ú'&&c!='ñ'&&c!='Ñ'&&(c!=(char)KeyEvent.VK_SPACE)) 
+		if ((c<'a'||c>'z')&& (c<'A'||c>'Z')&& c!='u'&&c!='u'&&c!='u'&&c!='u'&&c!='u'
+				&&c!='u'&&c!='u'&&c!='u'&&c!='u'&&c!='u'&&c!='u'&&c!='u'&&(c!=(char)KeyEvent.VK_SPACE)) 
 			e.consume();
 	}
 }

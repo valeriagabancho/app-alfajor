@@ -134,10 +134,10 @@ public class DialogoModificar extends JDialog implements ActionListener, ItemLis
 		getContentPane().add(btnGrabar);
 
 		//inserta los datos del primer alfajor
-		txtPrecio.setText(""+MenúPrincipal.precio0);
-		txtContenido.setText(""+MenúPrincipal.contenido0);
-		txtPeso.setText(""+MenúPrincipal.peso0);
-		txtSabor.setText(MenúPrincipal.sabor0);
+		txtPrecio.setText(""+MenuPrincipal.precio0);
+		txtContenido.setText(""+MenuPrincipal.contenido0);
+		txtPeso.setText(""+MenuPrincipal.peso0);
+		txtSabor.setText(MenuPrincipal.sabor0);
 	}
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnGrabar) {
@@ -158,34 +158,34 @@ public class DialogoModificar extends JDialog implements ActionListener, ItemLis
 		else {
 			switch (op) {
 			case 0: 
-			MenúPrincipal.precio0=Double.parseDouble(txtPrecio.getText());
-			MenúPrincipal.contenido0=Integer.parseInt(txtContenido.getText());
-			MenúPrincipal.peso0=Double.parseDouble(txtPeso.getText());
-			MenúPrincipal.sabor0=txtSabor.getText();
+			MenuPrincipal.precio0=Double.parseDouble(txtPrecio.getText());
+			MenuPrincipal.contenido0=Integer.parseInt(txtContenido.getText());
+			MenuPrincipal.peso0=Double.parseDouble(txtPeso.getText());
+			MenuPrincipal.sabor0=txtSabor.getText();
 			break;
 			case 1: 
-			MenúPrincipal.precio1=Double.parseDouble(txtPrecio.getText());
-			MenúPrincipal.contenido1=Integer.parseInt(txtContenido.getText());
-			MenúPrincipal.peso1=Double.parseDouble(txtPeso.getText());
-			MenúPrincipal.sabor1=txtSabor.getText();
+			MenuPrincipal.precio1=Double.parseDouble(txtPrecio.getText());
+			MenuPrincipal.contenido1=Integer.parseInt(txtContenido.getText());
+			MenuPrincipal.peso1=Double.parseDouble(txtPeso.getText());
+			MenuPrincipal.sabor1=txtSabor.getText();
 			break;
 			case 2: 
-			MenúPrincipal.precio2=Double.parseDouble(txtPrecio.getText());
-			MenúPrincipal.contenido2=Integer.parseInt(txtContenido.getText());
-			MenúPrincipal.peso2=Double.parseDouble(txtPeso.getText());
-			MenúPrincipal.sabor2=txtSabor.getText();
+			MenuPrincipal.precio2=Double.parseDouble(txtPrecio.getText());
+			MenuPrincipal.contenido2=Integer.parseInt(txtContenido.getText());
+			MenuPrincipal.peso2=Double.parseDouble(txtPeso.getText());
+			MenuPrincipal.sabor2=txtSabor.getText();
 			break;
 			case 3: 
-			MenúPrincipal.precio3=Double.parseDouble(txtPrecio.getText());
-			MenúPrincipal.contenido3=Integer.parseInt(txtContenido.getText());
-			MenúPrincipal.peso3=Double.parseDouble(txtPeso.getText());
-			MenúPrincipal.sabor3=txtSabor.getText();
+			MenuPrincipal.precio3=Double.parseDouble(txtPrecio.getText());
+			MenuPrincipal.contenido3=Integer.parseInt(txtContenido.getText());
+			MenuPrincipal.peso3=Double.parseDouble(txtPeso.getText());
+			MenuPrincipal.sabor3=txtSabor.getText();
 			break;
 			default: 
-			MenúPrincipal.precio4=Double.parseDouble(txtPrecio.getText());
-			MenúPrincipal.contenido4=Integer.parseInt(txtContenido.getText());
-			MenúPrincipal.peso4=Double.parseDouble(txtPeso.getText());
-			MenúPrincipal.sabor4=txtSabor.getText();
+			MenuPrincipal.precio4=Double.parseDouble(txtPrecio.getText());
+			MenuPrincipal.contenido4=Integer.parseInt(txtContenido.getText());
+			MenuPrincipal.peso4=Double.parseDouble(txtPeso.getText());
+			MenuPrincipal.sabor4=txtSabor.getText();
 			}
 		JOptionPane.showMessageDialog(this, "Datos grabados correctamente");
 		dispose();
@@ -199,34 +199,34 @@ public class DialogoModificar extends JDialog implements ActionListener, ItemLis
 	protected void cboMarcaItemStateChanged(ItemEvent arg0) {
 		int op=cboMarca.getSelectedIndex();
 		if(op==0){
-			txtPrecio.setText(""+MenúPrincipal.precio0);
-			txtContenido.setText(""+MenúPrincipal.contenido0);
-			txtPeso.setText(""+MenúPrincipal.peso0);
-			txtSabor.setText(MenúPrincipal.sabor0);
+			txtPrecio.setText(""+MenuPrincipal.precio0);
+			txtContenido.setText(""+MenuPrincipal.contenido0);
+			txtPeso.setText(""+MenuPrincipal.peso0);
+			txtSabor.setText(MenuPrincipal.sabor0);
 		}
 		else if(op==1){
-			txtPrecio.setText(""+MenúPrincipal.precio1);
-			txtContenido.setText(""+MenúPrincipal.contenido1);
-			txtPeso.setText(""+MenúPrincipal.peso1);
-			txtSabor.setText(MenúPrincipal.sabor1);
+			txtPrecio.setText(""+MenuPrincipal.precio1);
+			txtContenido.setText(""+MenuPrincipal.contenido1);
+			txtPeso.setText(""+MenuPrincipal.peso1);
+			txtSabor.setText(MenuPrincipal.sabor1);
 		}
 		else if(op==2){
-			txtPrecio.setText(""+MenúPrincipal.precio2);
-			txtContenido.setText(""+MenúPrincipal.contenido2);
-			txtPeso.setText(""+MenúPrincipal.peso2);
-			txtSabor.setText(MenúPrincipal.sabor2);
+			txtPrecio.setText(""+MenuPrincipal.precio2);
+			txtContenido.setText(""+MenuPrincipal.contenido2);
+			txtPeso.setText(""+MenuPrincipal.peso2);
+			txtSabor.setText(MenuPrincipal.sabor2);
 		}
 		else if(op==3){
-			txtPrecio.setText(""+MenúPrincipal.precio3);
-			txtContenido.setText(""+MenúPrincipal.contenido3);
-			txtPeso.setText(""+MenúPrincipal.peso3);
-			txtSabor.setText(MenúPrincipal.sabor3);
+			txtPrecio.setText(""+MenuPrincipal.precio3);
+			txtContenido.setText(""+MenuPrincipal.contenido3);
+			txtPeso.setText(""+MenuPrincipal.peso3);
+			txtSabor.setText(MenuPrincipal.sabor3);
 		}
 		else {
-			txtPrecio.setText(""+MenúPrincipal.precio4);
-			txtContenido.setText(""+MenúPrincipal.contenido4);
-			txtPeso.setText(""+MenúPrincipal.peso4);
-			txtSabor.setText(MenúPrincipal.sabor4);
+			txtPrecio.setText(""+MenuPrincipal.precio4);
+			txtContenido.setText(""+MenuPrincipal.contenido4);
+			txtPeso.setText(""+MenuPrincipal.peso4);
+			txtSabor.setText(MenuPrincipal.sabor4);
 		}
 	}
 	public void keyPressed(KeyEvent arg0) {
@@ -261,8 +261,8 @@ public class DialogoModificar extends JDialog implements ActionListener, ItemLis
 	}
 	protected void txtSaborKeyTyped(KeyEvent arg0) {
 		char c = arg0.getKeyChar();
-		if ((c<'a'||c>'z')&& (c<'A'||c>'Z')&& c!='á'&&c!='é'&&c!='í'&&c!='ó'&&c!='ú'
-				&&c!='Á'&&c!='É'&&c!='Í'&&c!='Ó'&&c!='Ú'&&c!='ñ'&&c!='Ñ'&&(c!=(char)KeyEvent.VK_SPACE)) 
+		if ((c<'a'||c>'z')&& (c<'A'||c>'Z')&& c!='u'&&c!='u'&&c!='u'&&c!='u'&&c!='u'
+				&&c!='u'&&c!='u'&&c!='u'&&c!='u'&&c!='u'&&c!='u'&&c!='u'&&(c!=(char)KeyEvent.VK_SPACE)) 
 			arg0.consume();
 	}
 }

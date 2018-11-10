@@ -113,7 +113,7 @@ public class DialogoVender extends JDialog implements ActionListener, KeyListene
 		txtS.setForeground(Color.BLACK);
 		scrollPane.setViewportView(txtS);
 		
-		txtPrecio.setText(""+MenúPrincipal.precio0);
+		txtPrecio.setText(""+MenuPrincipal.precio0);
 
 	}
 	public void actionPerformed(ActionEvent e) {
@@ -133,15 +133,15 @@ public class DialogoVender extends JDialog implements ActionListener, KeyListene
 	protected void cboMarcaActionPerformed(ActionEvent e) {
 		int op=cboMarca.getSelectedIndex();
 		switch (op) {
-		case 0: txtPrecio.setText(""+MenúPrincipal.precio0);
+		case 0: txtPrecio.setText(""+MenuPrincipal.precio0);
 		break;
-		case 1: txtPrecio.setText(""+MenúPrincipal.precio1);
+		case 1: txtPrecio.setText(""+MenuPrincipal.precio1);
 		break;
-		case 2: txtPrecio.setText(""+MenúPrincipal.precio2);
+		case 2: txtPrecio.setText(""+MenuPrincipal.precio2);
 		break;
-		case 3: txtPrecio.setText(""+MenúPrincipal.precio3);
+		case 3: txtPrecio.setText(""+MenuPrincipal.precio3);
 		break;
-		default: txtPrecio.setText(""+MenúPrincipal.precio4);
+		default: txtPrecio.setText(""+MenuPrincipal.precio4);
 		}
 	}
 	protected void btnVenderActionPerformed(ActionEvent e) {
@@ -153,61 +153,61 @@ public class DialogoVender extends JDialog implements ActionListener, KeyListene
 		ic=can*precio;
 		if (can<=0)JOptionPane.showMessageDialog(this,"Datos ingresados no validos");
 		else if (can<=5){
-			id=ic*MenúPrincipal.porcentaje1/100;
+			id=ic*MenuPrincipal.porcentaje1/100;
 		}
 		else if (can<=10){
-			id=ic*MenúPrincipal.porcentaje2/100;
+			id=ic*MenuPrincipal.porcentaje2/100;
 		}
 		else if (can<=15){
-			id=ic*MenúPrincipal.porcentaje3/100;
+			id=ic*MenuPrincipal.porcentaje3/100;
 		}
 		else
-			id=ic*MenúPrincipal.porcentaje4/100;
+			id=ic*MenuPrincipal.porcentaje4/100;
 		ip=ic-id;
 		switch (marca){
 		case 0: 
-			txtS.setText("Marca del alfajor	: "+MenúPrincipal.marca0+"\n");
-			txtS.append("Precio unitario		: "+MenúPrincipal.precio0+"\n");
-			MenúPrincipal.venta0++;
-			MenúPrincipal.importe0+=ip;
-			MenúPrincipal.cantidad0+=can;
+			txtS.setText("Marca del alfajor	: "+MenuPrincipal.marca0+"\n");
+			txtS.append("Precio unitario		: "+MenuPrincipal.precio0+"\n");
+			MenuPrincipal.venta0++;
+			MenuPrincipal.importe0+=ip;
+			MenuPrincipal.cantidad0+=can;
 			break;
 		case 1:
-			txtS.setText("Marca del alfajor	: "+MenúPrincipal.marca1+"\n");
-			txtS.append("Precio unitario		: "+MenúPrincipal.precio1+"\n");
-			MenúPrincipal.venta1++;
-			MenúPrincipal.importe1+=ip;
-			MenúPrincipal.cantidad1+=can;
+			txtS.setText("Marca del alfajor	: "+MenuPrincipal.marca1+"\n");
+			txtS.append("Precio unitario		: "+MenuPrincipal.precio1+"\n");
+			MenuPrincipal.venta1++;
+			MenuPrincipal.importe1+=ip;
+			MenuPrincipal.cantidad1+=can;
 			break;
 		case 2: 
-			txtS.setText("Marca del alfajor	: "+MenúPrincipal.marca2+"\n");
-			txtS.append("Precio unitario		: "+MenúPrincipal.precio2+"\n");
-			MenúPrincipal.venta2++;
-			MenúPrincipal.importe2+=ip;
-			MenúPrincipal.cantidad2+=can;
+			txtS.setText("Marca del alfajor	: "+MenuPrincipal.marca2+"\n");
+			txtS.append("Precio unitario		: "+MenuPrincipal.precio2+"\n");
+			MenuPrincipal.venta2++;
+			MenuPrincipal.importe2+=ip;
+			MenuPrincipal.cantidad2+=can;
 			break;
 		case 3: 
-			txtS.setText("Marca del alfajor	: "+MenúPrincipal.marca3+"\n");
-			txtS.append("Precio unitario		: "+MenúPrincipal.precio3+"\n");
-			MenúPrincipal.venta3++;
-			MenúPrincipal.importe3+=ip;
-			MenúPrincipal.cantidad3+=can;
+			txtS.setText("Marca del alfajor	: "+MenuPrincipal.marca3+"\n");
+			txtS.append("Precio unitario		: "+MenuPrincipal.precio3+"\n");
+			MenuPrincipal.venta3++;
+			MenuPrincipal.importe3+=ip;
+			MenuPrincipal.cantidad3+=can;
 			break;
 		default: 
-			txtS.setText("Marca del alfajor	: "+MenúPrincipal.marca4+"\n");
-			txtS.append("Precio unitario		: "+MenúPrincipal.precio4+"\n");
-			MenúPrincipal.venta4++;
-			MenúPrincipal.importe4+=ip;
-			MenúPrincipal.cantidad4+=can;
+			txtS.setText("Marca del alfajor	: "+MenuPrincipal.marca4+"\n");
+			txtS.append("Precio unitario		: "+MenuPrincipal.precio4+"\n");
+			MenuPrincipal.venta4++;
+			MenuPrincipal.importe4+=ip;
+			MenuPrincipal.cantidad4+=can;
 		}
 
 		txtS.append("Cantidad de cajas adquiridas	: "+can+"\n");
 		txtS.append("Importe de compra	: "+ic+"\n");
 		txtS.append("Importe de descuento	: "+id+"\n");
 		txtS.append("Importe a pagar		: "+ip+"\n");
-		if (can>=MenúPrincipal.cantidadObsequiable)txtS.append("Obsequio		: "+MenúPrincipal.obsequio);
-		if (MenúPrincipal.venta0+MenúPrincipal.venta1+MenúPrincipal.venta2+MenúPrincipal.venta3+MenúPrincipal.venta4==MenúPrincipal.numeroClienteSorpresa) 
-			txtS.append("\n"+"Premio Sorpresa	: "+MenúPrincipal.premioSorpresa);
+		if (can>=MenuPrincipal.cantidadObsequiable)txtS.append("Obsequio		: "+MenuPrincipal.obsequio);
+		if (MenuPrincipal.venta0+MenuPrincipal.venta1+MenuPrincipal.venta2+MenuPrincipal.venta3+MenuPrincipal.venta4==MenuPrincipal.numeroClienteSorpresa) 
+			txtS.append("\n"+"Premio Sorpresa	: "+MenuPrincipal.premioSorpresa);
 		
 	}
 	public void keyPressed(KeyEvent arg0) {

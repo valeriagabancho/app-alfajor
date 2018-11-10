@@ -71,7 +71,7 @@ public class DialogoConfigurarCantidad extends JDialog implements ActionListener
 		getContentPane().add(btnCancelar);
 		
 		//datos
-		txtCantidad.setText(""+MenúPrincipal.cantidadOptima);
+		txtCantidad.setText(""+MenuPrincipal.cantidadOptima);
 
 	}
 
@@ -86,7 +86,7 @@ public class DialogoConfigurarCantidad extends JDialog implements ActionListener
 		}
 	}
 	protected void btnAceptarActionPerformed(ActionEvent e) {
-		MenúPrincipal.cantidadOptima=Integer.parseInt(txtCantidad.getText());
+		MenuPrincipal.cantidadOptima=Integer.parseInt(txtCantidad.getText());
 		JOptionPane.showMessageDialog(this, "Datos grabados correctamente");
 		dispose();
 	}
