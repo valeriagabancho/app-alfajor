@@ -30,6 +30,8 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 	private JMenuItem mntmGenerarReportes;
 	private JMenuItem mntmConfigurarCantidadptima;
 	
+	//HolaMundo
+	
 	// Datos m�nimos del primer alfajor
 	public static String marca0 = "Alfano";
 	public static double precio0 = 18.0;
